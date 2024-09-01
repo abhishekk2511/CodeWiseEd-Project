@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - CodeWiseEd</title>
+    <style>
+        /* Basic styling for the sign-in page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .signin-container {
+            background: #6366F1;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+            max-width: 300px;
+            width: 100%;
+            color: #fff;
+        }
+        .signin-container h1 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+        }
+        .signin-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .signin-form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .signin-form input {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .signin-form input[type="email"] {
+            background-color: #e0e0e0;
+        }
+        .signin-form input[type="password"] {
+            background-color: #e0e0e0;
+        }
+        .signin-form button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            background-color: #1e40af;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .signin-form button:hover {
+            background-color: #1e3a8a;
+        }
+        .signin-form .forgot-password {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .signin-form .forgot-password a {
+            color: #dbeafe;
+            text-decoration: none;
+        }
+        .signin-form .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h1>Sign In</h1>
+        <form class="signin-form" action="/login" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Sign In</button>
+            
+            <div class="forgot-password">
+                <a href="#forgot-password">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
